@@ -11,13 +11,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Sassy+Frass&display=swap" rel="stylesheet">
-
         <style>
             @font-face {
                 font-family: SophiaMartini;
                 src:  url({{asset('storage/fonts/sophia_martini.otf')}}) format("opentype");
             }
         </style>
+
+        <link rel="icon" href="{{ url('icons8-red-heart-32.png') }}">
         <!-- Scripts -->
         @routes
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
