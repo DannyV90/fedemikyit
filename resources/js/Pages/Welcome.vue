@@ -39,9 +39,6 @@ const goldImageUrl = computed(() => {
                 Michele
             </div>
         </div>
-        <!--        <div style="font-family: 'Sassy Frass', cursive; font-size: 3rem" class="md:hidden block w-full text-center h-20">
-                    finalmente sposi
-                </div>-->
         <div class="hidden md:flex items-center gap-x-16 font-bold justify-center flex-wrap mx-auto w-full px-16 z-50
         text-9xl my-20 z-50"
              style="font-family: 'SophiaMartini', cursive">
@@ -55,9 +52,6 @@ const goldImageUrl = computed(() => {
                 Michele
             </h1>
         </div>
-        <!--        <div style="font-family: 'Sassy Frass', cursive; font-size: 6rem" class="hidden md:block w-full text-center h-20">
-                    finalmente sposi
-                </div>-->
         <div class="md:hidden flex items-center justify-around mx-auto mb-10">
             <img :src="foto3" alt="" style="width: 90rem; z-index: 100" >
         </div>
