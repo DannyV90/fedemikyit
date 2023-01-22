@@ -23,7 +23,6 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
         'goldImage' => \Illuminate\Support\Facades\Storage::url('/images/gold.jpg'),
-        'font' => \Illuminate\Support\Facades\Storage::url('/fonts/sophia_martini.otf'),
         'foto3' => \Illuminate\Support\Facades\Storage::url('/images/foto3.png'),
         'fotoFamiglia' => \Illuminate\Support\Facades\Storage::url('/images/famiglia.png')
     ]);

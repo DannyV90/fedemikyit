@@ -9,7 +9,6 @@ const props = defineProps({
     laravelVersion: String,
     phpVersion: String,
     goldImage: String,
-    font: String,
     foto3: String,
     fotoFamiglia: String
 
@@ -18,11 +17,6 @@ const props = defineProps({
 const goldImageUrl = computed(() => {
     return 'url('+props.goldImage+')'
 })
-const fontUrl = computed(() => {
-    return 'url('+props.font+')'
-})
-
-console.log(fontUrl.value)
 
 </script>
 
@@ -74,9 +68,8 @@ console.log(fontUrl.value)
             <div class="flex flex-col items-center justify-center text-7xl w-full px-4 gap-y-20 font-bold"
                  style="font-family: 'SophiaMartini', cursive">
                 <div>
-                    Gabriele<span style="font-family: 'Sassy Frass', cursive">,</span> Anna
-                    <span style="font-family: 'Sassy Frass', cursive">,</span> Giorgia e
-                    <span style="font-family: 'Sassy Frass', cursive">...</span>Mia
+                    Gabriele<span class="punctuation">,</span> Anna<span class="punctuation">,</span> Giorgia e
+                    <span class="punctuation">...</span>Mia
                 </div>
                 <div>
                     sono felici di annunciarvi che...
@@ -87,12 +80,10 @@ console.log(fontUrl.value)
             <div class="flex flex-col items-center justify-center text-2xl w-full px-4 gap-y-6 font-bold"
                  style="font-family: 'SophiaMartini', cursive">
                 <div>
-                    Gabriele<span style="font-family: 'Sassy Frass', cursive">,</span> Anna
-                    <span style="font-family: 'Sassy Frass', cursive">,</span>
+                    Gabriele<span class="punctuation">,</span> Anna<span class="punctuation">,</span>
                 </div>
                 <div>
-                     Giorgia e
-                    <span style="font-family: 'Sassy Frass', cursive">...</span>Mia
+                     Giorgia e<span class="punctuation">...</span>Mia
                 </div>
                 <div>
                     sono felici di annunciarvi
@@ -216,8 +207,8 @@ console.log(fontUrl.value)
     left: 0;
 }
 
-@font-face {
-    font-family: SophiaMartini;
-    src:  v-bind(fontUrl) format("opentype");
+.punctuation{
+    font-family: 'Sassy Frass', cursive
 }
+
 </style>
