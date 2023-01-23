@@ -125,7 +125,7 @@ function submit() {
                     :src="fotoFamiglia"
                     alt=""
                     data-aos="flip-left"
-                    data-aos-offset="1000"
+                    data-aos-offset="700"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="3000">
             </div>
