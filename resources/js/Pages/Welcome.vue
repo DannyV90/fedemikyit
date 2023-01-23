@@ -15,7 +15,6 @@ onMounted(() => {
     AOS.init()
 })
 
-
 const props = defineProps({
     canLogin: Boolean,
     canRegister: Boolean,
@@ -75,8 +74,8 @@ function submit() {
 
     <div id="mainDiv" class="flex flex-col justify-center bg-fuchsia-50 min-h-screen py-16 text-center "
          style="color: rgb(89,77,53)">
-        <div class="flex flex-col lg:flex-row items-center justify-center text-4xl md:text-7xl lg:text-8xl md:my-20
-        lg:my-16 w-full z-50 mb-16 font-bold lg:mx-auto lg:gap-x-16"
+        <div class="flex flex-col xl:flex-row items-center justify-center text-4xl md:text-7xl xl:text-8xl md:my-20
+        xl:my-16 w-full z-50 mb-16 font-bold xl:mx-auto xl:gap-x-16"
              data-aos="zoom-in"
              data-aos-duration="3000"
              style="font-family: 'SophiaMartini', cursive">
@@ -91,15 +90,19 @@ function submit() {
             </div>
         </div>
 
-        <div class="flex items-center justify-around mx-auto mb-32 lg:mb-60 z-50 w-full">
-            <img class="max-w-full md:max-w-5xl" :src="foto3" alt="">
+        <div class="flex flex-col items-center justify-around mx-auto mb-32 md:mb-60 z-50 w-full">
+            <img class="max-w-full md:max-w-3xl lg:max-w-5xl" :src="foto3" alt="">
+            <div class="z-50 font-bold text-7xl punctuation -rotate-12">
+                " M' aggio pigghiato o' core "
+            </div>
         </div>
 
+
         <div class="z-50 mb-8">
-            <div class="flex flex-col items-center justify-center text-2xl md:text-5xl lg:text-6xl w-full px-4 gap-y-6
-            md:gap-y-14 lg:gap-y-20 font-bold"
+            <div class="flex flex-col items-center justify-center text-2xl md:text-5xl xl:text-6xl w-full px-4 gap-y-6
+            md:gap-y-14 xl:gap-y-20 font-bold"
                  style="font-family: 'SophiaMartini', cursive">
-                <div class="flex flex-col gap-y-6 md:gap-y-14 lg:flex-row">
+                <div class="flex flex-col gap-y-6 md:gap-y-14 xl:flex-row">
                     <div>
                         Gabriele<span class="punctuation">,</span> Anna<span class="punctuation">,</span>
                     </div>
@@ -107,7 +110,7 @@ function submit() {
                         Giorgia e<span class="punctuation">...</span>Mia
                     </div>
                 </div>
-                <div class="flex flex-col gap-y-6 md:gap-y-14 lg:flex-row gap-x-8">
+                <div class="flex flex-col gap-y-6 md:gap-y-14 xl:flex-row gap-x-8">
                     <div>
                         sono felici di annunciarvi
                     </div>
@@ -121,11 +124,11 @@ function submit() {
         <div class="z-50">
             <div class="flex items-center justify-around mx-auto mb-20">
                 <img
-                    class="max-w-full md:max-w-6xl"
+                    class="max-w-full xl:max-w-6xl"
                     :src="fotoFamiglia"
                     alt=""
                     data-aos="flip-left"
-                    data-aos-offset="500"
+                    data-aos-offset="300"
                     data-aos-delay="1000"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="3000">
@@ -193,7 +196,7 @@ function submit() {
             v-model="openFormModal"
             v-slot="{ close }"
             classes="flex justify-center items-center my-4"
-            content-class="relative flex flex-col max-h-full mx-4 px-2 pb-8 border w-full md:w-3/4 lg:w-1/2 rounded-lg
+            content-class="relative flex flex-col max-h-full mx-4 px-2 pb-8 border w-full md:w-3/4 xl:w-1/2 rounded-lg
             bg-pink-50 overflow-y-auto"
         >
             <button class="absolute top-3 right-6 font-bold" @click="openFormModal=false">
@@ -204,7 +207,7 @@ function submit() {
             </div>
             <div class="flex flex-col z-50 w-full px-4 justify-center">
                 <form action="#" method="POST"  @submit.prevent="recaptcha"
-                      class="flex flex-col gap-y-6 w-full md:w-3/4 lg:w-1/2 mx-auto">
+                      class="flex flex-col gap-y-6 w-full md:w-3/4 xl:w-1/2 mx-auto">
                     <div>
                         <InputLabel value="Nome" class="font-bold mb-1 text-lg" style="color: rgb(89,77,53)"/>
                         <InputError :message="form.errors.name" class="font-bold"/>
@@ -239,7 +242,7 @@ function submit() {
             </div>
         </VueFinalModal>
 
-        <div class="z-50 my-16">
+        <div class="z-50 my-16 text-sm font-bold">
             IBAN: IT39X0344214239000054831009
         </div>
 
