@@ -19,6 +19,8 @@
         </style>
 
         <link rel="icon" href="{{ url('icons8-red-heart-32.png') }}">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
         <!-- Scripts -->
         @routes
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])

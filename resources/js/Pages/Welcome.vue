@@ -116,12 +116,22 @@ function submit() {
 
         <div class="hidden lg:block z-50">
             <div class="flex items-center justify-around mx-auto mb-10 mt-8">
-                <img :src="fotoFamiglia" alt="" style="width: 70rem">
+                <img
+                    v-animate-onscroll="'animated flipInX'"
+                    :src="fotoFamiglia"
+                    alt=""
+                    style="width: 70rem"
+                >
             </div>
         </div>
         <div class="lg:hidden z-50">
             <div class="flex items-center justify-around mx-auto mb-10 mt-8">
-                <img :src="fotoFamiglia" alt="" style="width: 45rem">
+                <img
+                    v-animate-onscroll.repeat="'animated flipInX'"
+                    :src="fotoFamiglia"
+                    alt=""
+                    style="width: 45rem"
+                >
             </div>
         </div>
 
@@ -176,6 +186,7 @@ function submit() {
             text-xl my-8 bg-pink-100 hover:bg-pink-300 border border-pink-400"
             @click="openFormModal = true"
             style="color: rgb(89,77,53)"
+            v-animate-onscroll.repeat="'animated bounce'"
         >
             CLICCA QUI
         </button>
@@ -183,12 +194,15 @@ function submit() {
         <VueFinalModal
             v-model="openFormModal"
             v-slot="{ close }"
-            classes="flex justify-center items-center"
+            classes="flex justify-center items-center my-4"
             content-class="relative flex flex-col max-h-full mx-4 px-2 py-8 border w-full md:w-3/4 lg:w-1/2 rounded-lg
             bg-pink-50 overflow-y-scroll"
         >
+            <button class="absolute top-3 right-6 font-bold" @click="openFormModal=false">
+                X
+            </button>
             <div class="font-bold text-2xl md:text-4xl my-8" style="font-family: 'SophiaMartini', cursive">
-                Vuoi inviarci una dedica o un pensiero<span class="punctuation text-7xl">?</span>
+                Vuoi inviarci una dedica o un pensiero<span class="punctuation text-5xl md:text-7xl">?</span>
             </div>
             <div class="flex flex-col z-50 w-full px-4 justify-center">
                 <form action="#" method="POST"  @submit.prevent="recaptcha"
@@ -218,7 +232,11 @@ function submit() {
                         />
                     </div>
 
-                    <PrimaryButton class="w-fit font-bold border-gray-300 mx-auto">invia</PrimaryButton>
+                    <PrimaryButton
+                       class="w-fit font-bold border-gray-300 mx-auto"
+                    >
+                        invia
+                    </PrimaryButton>
                 </form>
             </div>
         </VueFinalModal>
