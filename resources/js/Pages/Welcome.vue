@@ -184,10 +184,10 @@ function submit() {
 
         <button
             class="inline-flex items-center px-4 py-2 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
-            text-xl my-16 bg-pink-100 hover:bg-pink-300 border border-pink-400"
+            text-xl my-16 bg-pink-100 hover:bg-pink-300 border border-pink-400 animate__animated animate__heartBeat
+            animate__infinite"
             @click="openFormModal = true"
             style="color: rgb(89,77,53)"
-            data-aos="flip-down"
         >
             CLICCA QUI
         </button>
