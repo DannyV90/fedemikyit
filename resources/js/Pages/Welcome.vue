@@ -55,6 +55,7 @@ function submit() {
                 position: toast.POSITION.TOP_RIGHT,
                 theme: "colored"
             })
+            openFormModal.value = false
         },
         onError: () => {
             toast.error("Qualcosa è andato storto! Riprova", {
