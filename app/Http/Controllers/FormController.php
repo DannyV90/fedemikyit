@@ -17,7 +17,7 @@ class FormController extends Controller
      */
     public function __invoke(MessageRequest $request)
     {
-        Mail::to('danielnoize@gmail.com')->send(new Dedication(
+        Mail::to('danielnoize90@gmail.com')->send(new Dedication(
             $request->validated('name') ,
             $request->validated('email'),
             $request->validated('phone'),
