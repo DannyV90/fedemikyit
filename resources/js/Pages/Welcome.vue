@@ -74,7 +74,7 @@ function submit() {
 
     <div id="mainDiv" class="flex flex-col justify-center bg-fuchsia-50 min-h-screen py-16 text-center "
          style="color: rgb(89,77,53)">
-        <div class="flex flex-col xl:flex-row items-center justify-center text-5xl md:text-7xl xl:text-8xl md:my-20
+        <div class="flex flex-col xl:flex-row items-center justify-center text-3xl md:text-7xl xl:text-8xl md:my-20
         xl:my-16 w-full z-50 mb-16 font-bold xl:mx-auto xl:gap-x-16"
              data-aos="zoom-in"
              data-aos-duration="3000"
