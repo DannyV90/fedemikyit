@@ -1,7 +1,7 @@
 <script setup>
-import {Head, Link, useForm} from '@inertiajs/vue3';
+import {Head, useForm} from '@inertiajs/vue3';
 import {Countdown} from 'vue3-flip-countdown'
-import {computed, ref} from "vue";
+import {computed, onMounted, ref} from "vue";
 import { useReCaptcha } from "vue-recaptcha-v3";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 import TextInput from "@/Components/TextInput.vue";
@@ -10,6 +10,11 @@ import InputError from "@/Components/InputError.vue";
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
 import { VueFinalModal } from 'vue-final-modal'
+
+onMounted(() => {
+    AOS.init()
+})
+
 
 const props = defineProps({
     canLogin: Boolean,
@@ -70,8 +75,10 @@ function submit() {
 
     <div id="mainDiv" class="flex flex-col justify-center bg-fuchsia-50 min-h-screen py-16 text-center "
          style="color: rgb(89,77,53)">
-        <div class="flex flex-col lg:flex-row items-center justify-center text-5xl md:text-7xl lg:text-8xl md:my-20
+        <div class="flex flex-col lg:flex-row items-center justify-center text-4xl md:text-7xl lg:text-8xl md:my-20
         lg:my-16 w-full z-50 mb-16 font-bold lg:mx-auto lg:gap-x-16"
+             data-aos="zoom-in"
+             data-aos-duration="3000"
              style="font-family: 'SophiaMartini', cursive">
             <div>
                 Federica
@@ -84,16 +91,13 @@ function submit() {
             </div>
         </div>
 
-        <div class="lg:hidden flex items-center justify-around mx-auto mb-10">
-            <img :src="foto3" alt="" style="width: 90rem; z-index: 100" >
-        </div>
-        <div class="hidden lg:flex items-center justify-around mx-auto mb-10 px-4">
-            <img :src="foto3" alt="" style="height: 40rem; z-index: 100" >
+        <div class="flex items-center justify-around mx-auto mb-32 lg:mb-60 z-50 w-full">
+            <img class="max-w-full md:max-w-5xl" :src="foto3" alt="">
         </div>
 
-        <div class="z-50">
-            <div class="flex flex-col items-center justify-center text-2xl md:text-5xl lg:text-6xl w-full md:gap-y-14
-            px-4 gap-y-6 md:gap-y-14 lg:gap-y-20 font-bold"
+        <div class="z-50 mb-8">
+            <div class="flex flex-col items-center justify-center text-2xl md:text-5xl lg:text-6xl w-full px-4 gap-y-6
+            md:gap-y-14 lg:gap-y-20 font-bold"
                  style="font-family: 'SophiaMartini', cursive">
                 <div class="flex flex-col gap-y-6 md:gap-y-14 lg:flex-row">
                     <div>
@@ -108,32 +112,25 @@ function submit() {
                         sono felici di annunciarvi
                     </div>
                     <div>
-                        che...
+                        che<span class="punctuation">...</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="hidden lg:block z-50">
-            <div class="flex items-center justify-around mx-auto mb-10 mt-8">
+        <div class="z-50">
+            <div class="flex items-center justify-around mx-auto mb-20">
                 <img
-                    v-animate-onscroll="'animated flipInX'"
+                    class="max-w-full md:max-w-6xl"
                     :src="fotoFamiglia"
                     alt=""
-                    style="width: 70rem"
-                >
+                    data-aos="flip-left"
+                    data-aos-offset="1000"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="3000">
             </div>
         </div>
-        <div class="lg:hidden z-50">
-            <div class="flex items-center justify-around mx-auto mb-10 mt-8">
-                <img
-                    v-animate-onscroll.repeat="'animated flipInX'"
-                    :src="fotoFamiglia"
-                    alt=""
-                    style="width: 45rem"
-                >
-            </div>
-        </div>
+
 
         <div class="mb-16 z-50 px-4">
             <div class="md:mb-4">
@@ -186,7 +183,7 @@ function submit() {
             text-xl my-8 bg-pink-100 hover:bg-pink-300 border border-pink-400"
             @click="openFormModal = true"
             style="color: rgb(89,77,53)"
-            v-animate-onscroll.repeat="'animated bounce'"
+            data-aos="flip-down"
         >
             CLICCA QUI
         </button>
@@ -195,13 +192,13 @@ function submit() {
             v-model="openFormModal"
             v-slot="{ close }"
             classes="flex justify-center items-center my-4"
-            content-class="relative flex flex-col max-h-full mx-4 px-2 py-8 border w-full md:w-3/4 lg:w-1/2 rounded-lg
-            bg-pink-50 overflow-y-scroll"
+            content-class="relative flex flex-col max-h-full mx-4 px-2 pb-8 border w-full md:w-3/4 lg:w-1/2 rounded-lg
+            bg-pink-50 overflow-y-auto"
         >
             <button class="absolute top-3 right-6 font-bold" @click="openFormModal=false">
                 X
             </button>
-            <div class="font-bold text-2xl md:text-4xl my-8" style="font-family: 'SophiaMartini', cursive">
+            <div class="font-bold text-2xl md:text-4xl my-12 mb-8" style="font-family: 'SophiaMartini', cursive">
                 Vuoi inviarci una dedica o un pensiero<span class="punctuation text-5xl md:text-7xl">?</span>
             </div>
             <div class="flex flex-col z-50 w-full px-4 justify-center">

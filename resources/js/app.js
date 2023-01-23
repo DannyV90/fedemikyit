@@ -6,7 +6,6 @@ import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 import { VueReCaptcha, useReCaptcha } from 'vue-recaptcha-v3'
-import VueAnimateOnScroll from 'vue3-animate-onscroll';
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
@@ -19,7 +18,6 @@ createInertiaApp({
             .use(plugin)
             .use(ZiggyVue, Ziggy)
             .use(VueReCaptcha, { siteKey: captchaKey } )
-            .use(VueAnimateOnScroll)
             .mount(el);
     },
     progress: {
