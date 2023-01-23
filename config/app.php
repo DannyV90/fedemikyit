@@ -143,6 +143,11 @@ return [
         // 'store'  => 'redis',
     ],
 
+
+
+
+    'dedicationMail' => env('MAIL_DEDICATION', 'danielnoize90@gmail.com'),
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
