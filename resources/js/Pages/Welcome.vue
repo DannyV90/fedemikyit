@@ -1,7 +1,7 @@
 <script setup>
 import {Head, Link, useForm} from '@inertiajs/vue3';
 import {Countdown} from 'vue3-flip-countdown'
-import {computed} from "vue";
+import {computed, ref} from "vue";
 import { useReCaptcha } from "vue-recaptcha-v3";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 import TextInput from "@/Components/TextInput.vue";
@@ -9,6 +9,7 @@ import InputLabel from "@/Components/InputLabel.vue";
 import InputError from "@/Components/InputError.vue";
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
+import { VueFinalModal } from 'vue-final-modal'
 
 const props = defineProps({
     canLogin: Boolean,
@@ -24,6 +25,8 @@ const props = defineProps({
 const goldImageUrl = computed(() => {
     return 'url('+props.goldImage+')'
 })
+
+const openFormModal = ref(false)
 
 const form = useForm({
     name: null,
@@ -67,7 +70,7 @@ function submit() {
 
     <div id="mainDiv" class="flex flex-col justify-center bg-fuchsia-50 min-h-screen py-16 text-center "
          style="color: rgb(89,77,53)">
-        <div class="flex flex-col lg:flex-row items-center justify-center text-5xl md:text-7xl lg:text-9xl my-4 md:my-20
+        <div class="flex flex-col lg:flex-row items-center justify-center text-5xl md:text-7xl lg:text-8xl md:my-20
         lg:my-16 w-full z-50 mb-16 font-bold lg:mx-auto lg:gap-x-16"
              style="font-family: 'SophiaMartini', cursive">
             <div>
@@ -85,14 +88,14 @@ function submit() {
             <img :src="foto3" alt="" style="width: 90rem; z-index: 100" >
         </div>
         <div class="hidden lg:flex items-center justify-around mx-auto mb-10 px-4">
-            <img :src="foto3" alt="" style="width: 70rem; z-index: 100" >
+            <img :src="foto3" alt="" style="height: 40rem; z-index: 100" >
         </div>
 
         <div class="z-50">
-            <div class="flex flex-col items-center justify-center text-2xl md:text-5xl lg:text-7xl w-full md:gap-y-14
+            <div class="flex flex-col items-center justify-center text-2xl md:text-5xl lg:text-6xl w-full md:gap-y-14
             px-4 gap-y-6 md:gap-y-14 lg:gap-y-20 font-bold"
                  style="font-family: 'SophiaMartini', cursive">
-                <div class="flex flex-col gap-y-6 lg:flex-row">
+                <div class="flex flex-col gap-y-6 md:gap-y-14 lg:flex-row">
                     <div>
                         Gabriele<span class="punctuation">,</span> Anna<span class="punctuation">,</span>
                     </div>
@@ -100,7 +103,7 @@ function submit() {
                         Giorgia e<span class="punctuation">...</span>Mia
                     </div>
                 </div>
-                <div class="flex flex-col gap-y-6 lg:flex-row gap-x-8">
+                <div class="flex flex-col gap-y-6 md:gap-y-14 lg:flex-row gap-x-8">
                     <div>
                         sono felici di annunciarvi
                     </div>
@@ -168,37 +171,57 @@ function submit() {
             </div>
         </div>
 
-        <div class="flex flex-col z-50 my-16 w-full px-4 justify-center">
-            <form action="#" method="POST"  @submit.prevent="recaptcha" class="flex flex-col gap-y-6 w-full md:w-3/4 lg:w-1/2 mx-auto">
-                <div>
-                    <InputLabel value="Nome" class="font-bold mb-1 text-lg" style="color: rgb(89,77,53)"/>
-                    <InputError :message="form.errors.name" class="font-bold"/>
-                    <TextInput v-model="form.name" class="px-6 py-1.5 w-full"/>
-                </div>
-                <div>
-                    <InputLabel value="Email" class="font-bold mb-1 text-lg" style="color: rgb(89,77,53)"/>
-                    <InputError :message="form.errors.email" class="font-bold"/>
-                    <TextInput v-model="form.email" class="px-6 py-1.5 w-full"/>
-                </div>
-                <div>
-                    <InputLabel value="Tel" class="font-bold mb-1 text-lg" style="color: rgb(89,77,53)"/>
-                    <InputError :message="form.errors.phone" class="font-bold"/>
-                    <TextInput v-model="form.phone" class="px-6 py-1.5 w-full"/>
-                </div>
-                <div>
-                    <InputLabel value="Messaggio" class="font-bold mb-1 text-lg" style="color: rgb(89,77,53)"/>
-                    <InputError :message="form.errors.message" class="font-bold"/>
-                    <textarea
-                        v-model="form.message"
-                        class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm px-6
+        <button
+            class="inline-flex items-center px-4 py-2 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
+            text-xl my-8 bg-pink-100 hover:bg-pink-300 border border-pink-400"
+            @click="openFormModal = true"
+            style="color: rgb(89,77,53)"
+        >
+            CLICCA QUI
+        </button>
+
+        <VueFinalModal
+            v-model="openFormModal"
+            v-slot="{ close }"
+            classes="flex justify-center items-center"
+            content-class="relative flex flex-col max-h-full mx-4 px-2 py-8 border w-full md:w-3/4 lg:w-1/2 rounded-lg
+            bg-pink-50 overflow-y-scroll"
+        >
+            <div class="font-bold text-2xl md:text-4xl my-8" style="font-family: 'SophiaMartini', cursive">
+                Vuoi inviarci una dedica o un pensiero<span class="punctuation text-7xl">?</span>
+            </div>
+            <div class="flex flex-col z-50 w-full px-4 justify-center">
+                <form action="#" method="POST"  @submit.prevent="recaptcha"
+                      class="flex flex-col gap-y-6 w-full md:w-3/4 lg:w-1/2 mx-auto">
+                    <div>
+                        <InputLabel value="Nome" class="font-bold mb-1 text-lg" style="color: rgb(89,77,53)"/>
+                        <InputError :message="form.errors.name" class="font-bold"/>
+                        <TextInput v-model="form.name" class="px-6 py-1.5 w-full"/>
+                    </div>
+                    <div>
+                        <InputLabel value="Email" class="font-bold mb-1 text-lg" style="color: rgb(89,77,53)"/>
+                        <InputError :message="form.errors.email" class="font-bold"/>
+                        <TextInput v-model="form.email" class="px-6 py-1.5 w-full"/>
+                    </div>
+                    <div>
+                        <InputLabel value="Tel" class="font-bold mb-1 text-lg" style="color: rgb(89,77,53)"/>
+                        <InputError :message="form.errors.phone" class="font-bold"/>
+                        <TextInput v-model="form.phone" class="px-6 py-1.5 w-full"/>
+                    </div>
+                    <div>
+                        <InputLabel value="Messaggio" class="font-bold mb-1 text-lg" style="color: rgb(89,77,53)"/>
+                        <InputError :message="form.errors.message" class="font-bold"/>
+                        <textarea
+                            v-model="form.message"
+                            class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm px-6
                         py-1.5 w-full h-60"
-                    />
-                </div>
+                        />
+                    </div>
 
-                <PrimaryButton class="w-fit font-bold border-gray-300 mx-auto">invia</PrimaryButton>
-            </form>
-        </div>
-
+                    <PrimaryButton class="w-fit font-bold border-gray-300 mx-auto">invia</PrimaryButton>
+                </form>
+            </div>
+        </VueFinalModal>
 
     </div>
 </template>
