@@ -74,7 +74,7 @@ function submit() {
         <title>Ci Sposiamo</title>
     </Head>
 
-    <div v-cloak id="mainDiv" class="flex flex-col justify-center bg-fuchsia-50 min-h-screen py-16 text-center "
+    <div v-cloak id="mainDiv" class="flex flex-col justify-center bg-fuchsia-50 min-h-screen py-16 text-center"
          style="color: rgb(89,77,53)">
         <section class="z-50 h-screen mb-32 lg:mb-60 mt-4">
             <div class="flex flex-col xl:flex-row items-center justify-center text-3xl md:text-6xl xl:text-8xl
@@ -262,7 +262,7 @@ function submit() {
                         <textarea
                             v-model="form.message"
                             class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm px-6
-                        py-1.5 w-full h-60"
+                            py-1.5 w-full h-60"
                         />
                     </div>
 
@@ -280,16 +280,12 @@ function submit() {
             <div>
                 Realizzazione grafica e tecnica by DVWebSolutions
             </div>
-            <img class="w-36 mx-auto" :src="logo" alt="">
+            <img class="w-36 mx-auto -mt-10" :src="logo" alt="">
         </div>
 
     </div>
 </template>
-<style scoped>
-
-[v-cloak]{
-    display: none !important;
-}
+<style>
 
 #mainDiv{
     position: relative;
