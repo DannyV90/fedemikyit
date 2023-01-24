@@ -22,7 +22,8 @@ Route::get('/', function () {
     return Inertia::render('Welcome', [
         'goldImage' => Storage::url('/images/gold.jpg'),
         'foto3' => Storage::url('/images/foto3.png'),
-        'fotoFamiglia' => Storage::url('/images/famiglia.png')
+        'fotoFamiglia' => Storage::url('/images/famiglia.png'),
+        'logo' => Storage::url('/images/DVW_logo_light.png')
     ]);
 });
 
