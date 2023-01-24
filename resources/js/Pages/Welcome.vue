@@ -76,7 +76,7 @@ function submit() {
 
     <div id="mainDiv" class="flex flex-col justify-center bg-fuchsia-50 min-h-screen py-16 text-center "
          style="color: rgb(89,77,53)">
-        <section class="z-50 h-screen md:mb-60">
+        <section class="z-50 h-screen mb-32 lg:mb-60 ">
             <div class="flex flex-col xl:flex-row items-center justify-center text-3xl md:text-6xl xl:text-8xl md:my-20
             xl:my-16 w-full font-bold xl:mx-auto xl:gap-x-16 mb-8"
                  data-aos="zoom-in"
@@ -103,7 +103,7 @@ function submit() {
         </section>
 
 
-        <section class="z-50 h-screen">
+        <section class="z-50 h-screen lg:mb-60">
             <div>
                 <div class="flex flex-col items-center justify-center text-3xl md:text-5xl xl:text-6xl w-full px-4 gap-y-6
                 md:gap-y-14 xl:gap-y-20 font-bold"
@@ -156,7 +156,7 @@ function submit() {
 
 
         <section
-            class="z-50 w-full"
+            class="z-50 w-full "
             data-aos="flip-right"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="3000"
