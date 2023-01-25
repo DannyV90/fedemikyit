@@ -27,6 +27,8 @@ const props = defineProps({
 
 });
 
+const showImage = ref(false)
+
 const goldImageUrl = computed(() => {
     return 'url('+props.goldImage+')'
 })
@@ -74,7 +76,8 @@ function submit() {
         <title>Ci Sposiamo</title>
     </Head>
 
-    <div v-cloak id="mainDiv" class="flex flex-col justify-center bg-fuchsia-50 min-h-screen py-16 text-center"
+
+    <div id="mainDiv" class="flex flex-col justify-center bg-fuchsia-50 min-h-screen py-16 text-center"
          style="color: rgb(89,77,53)">
         <section class="z-50 h-screen mb-32 lg:mb-60 mt-4">
             <div class="flex flex-col xl:flex-row items-center justify-center text-3xl md:text-6xl xl:text-8xl
@@ -93,13 +96,18 @@ function submit() {
                 </div>
             </div>
 
+            <transition>
+                <div v-show="showImage" class="flex flex-col items-center mx-auto w-full">
 
-            <div class="flex flex-col items-center mx-auto w-full">
-                <img class="max-w-full md:max-w-xl lg:max-w-3xl" :src="foto3" alt="">
-                <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12">
-                    " M' aggio pigghiato o' core "
+                        <img v-show="showImage"  class="max-w-full md:max-w-xl lg:max-w-3xl" :src="foto3" alt=""
+                             @load="showImage = true"
+                        >
+                    <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12">
+                        " M' aggio pigghiato o' core "
+                    </div>
+
                 </div>
-            </div>
+            </transition>
         </section>
 
 
@@ -285,7 +293,7 @@ function submit() {
 
     </div>
 </template>
-<style>
+<style scoped>
 
 #mainDiv{
     position: relative;
@@ -310,6 +318,16 @@ function submit() {
 
 .punctuation{
     font-family: 'Sassy Frass', cursive
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 2s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
 }
 
 </style>
