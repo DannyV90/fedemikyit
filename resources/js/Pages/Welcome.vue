@@ -99,7 +99,7 @@ function submit() {
             <transition>
                 <div v-show="showImage" class="flex flex-col items-center mx-auto w-full">
 
-                        <img v-show="showImage"  class="max-w-full md:max-w-xl lg:max-w-3xl" :src="foto3" alt=""
+                        <img v-show="showImage"  class="max-w-full md:max-w-xl" :src="foto3" alt=""
                              @load="showImage = true"
                         >
                     <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12">
