@@ -80,8 +80,8 @@ function submit() {
     <div id="mainDiv" class="flex flex-col justify-center bg-fuchsia-50 min-h-screen py-16 text-center"
          style="color: rgb(89,77,53)">
         <section class="z-50 h-screen mb-32 lg:mb-60 mt-4">
-            <div class="flex flex-col xl:flex-row items-center justify-center text-3xl md:text-6xl w-full font-bold
-            xl:mx-auto xl:gap-x-16 mb-8"
+            <div class="flex flex-col xl:flex-row items-center justify-center text-3xl md:text-6xl xl:text-7xl
+            w-full font-bold xl:mx-auto xl:gap-x-16 mb-8"
                  data-aos="zoom-in"
                  data-aos-duration="3000"
                  style="font-family: 'SophiaMartini', cursive">
