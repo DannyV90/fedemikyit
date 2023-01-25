@@ -59,6 +59,8 @@ function submit() {
                 theme: "colored"
             })
             openFormModal.value = false
+            form.clearErrors()
+            form.reset()
         },
         onError: () => {
             toast.error("Qualcosa è andato storto! Riprova", {
@@ -67,6 +69,12 @@ function submit() {
             })
         }
     })
+}
+
+const closeModal = () => {
+    openFormModal.value = false
+    form.clearErrors()
+    form.reset()
 }
 
 </script>
@@ -237,7 +245,7 @@ function submit() {
             content-class="relative flex flex-col max-h-full mx-4 px-2 pb-8 border w-full md:w-3/4 xl:w-1/2 rounded-lg
             bg-pink-50 overflow-y-auto"
         >
-            <button class="absolute top-3 right-6 font-bold" @click="openFormModal=false">
+            <button class="absolute top-3 right-6 font-bold" @click="closeModal">
                 X
             </button>
             <div

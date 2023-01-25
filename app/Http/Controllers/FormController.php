@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\MessageRequest;
-use App\Mail\Dedication;
+use App\Models\Dedication;
+use App\Mail\Dedication as MailDedication;
+use Exception;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 class FormController extends Controller
@@ -17,12 +20,33 @@ class FormController extends Controller
      */
     public function __invoke(MessageRequest $request)
     {
-        Mail::to(config('app.dedicationMail'))->send(new Dedication(
-            $request->validated('name') ,
-            $request->validated('email'),
-            $request->validated('phone'),
-            $request->validated('message')
-        ));
+        try{
+
+            Mail::to(config('app.dedicationMail'))
+                ->send(new MailDedication(
+                    $request->validated('name'),
+                    $request->validated('email'),
+                    $request->validated('phone'),
+                    $request->validated('message')
+                ));
+
+            Dedication::create([
+                'name' => $request->validated('name'),
+                'email' => $request->validated('email'),
+                'phone' => $request->validated('phone'),
+                'message' => $request->validated('message'),
+                'ip_address' => $request->ip()
+            ]);
+
+        } catch(Exception $e){
+
+            Log::error('Nome: ' . $request->validated('name').' - Email: ' .
+                $request->validated('email').' - Exception: '. $e->getMessage()
+            );
+            return back()->withErrors(['dedicationError' => 'Qualcosa è andato storto!']);
+
+        }
+
 
         return back();
     }

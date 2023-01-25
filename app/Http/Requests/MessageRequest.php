@@ -49,7 +49,7 @@ class MessageRequest extends FormRequest
             'email.required' => 'Per favore, indica un indirizzo email agli Sposi!',
             'email.email' => 'L\'Email indicata, non sembra essere un Indirizzo email valido!',
             'phone.required' => 'Per favore, indica un numero di telefono agli Sposi!',
-            'phone.max_digits' => 'Il Numero di Telefono può essere al massimo di 13 numeri!',
+            'phone.max_digits' => 'Il Numero di Telefono può essere composto da soli Numeri e al massimo 13!',
             'phone.numeric' => 'Il Numero di Telefono può essere composto da soli Numeri!',
             'message.required' => 'Se non scrivi un messaggio...che Dedica è?!',
             'message.max' => 'Hai tanto da Dedicare...WOW...purtroppo qua puoi inserire solo 2000 caratteri massimo!'
