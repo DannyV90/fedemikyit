@@ -233,9 +233,24 @@ const closeModal = () => {
                 CLICCA QUI
             </button>
 
-            <div class="z-50 my-16 text-sm font-bold">
+<!--            <div class="z-50 my-16 text-sm font-bold">
                 IBAN: IT39X0344214239000054831009
+            </div>-->
+
+            <div class="mb-16">
+                <div class="text-sm">
+                    Vuoi contribuire al nostro viaggio di nozze?
+                </div>
+                <a class="inline-flex items-center px-2 py-1 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
+                    bg-pink-100 hover:bg-pink-300 border border-pink-400"
+                    href="http://listanozze.gattinonionline.it/installations/siapDesign/GattinoniTravelNetwork/">
+                    Vai alla lista Nozze
+                </a>
+                <div class="text-sm">
+                    Chiave d'accesso (Invitati): <b>Fedemiky</b>
+                </div>
             </div>
+
         </section>
 
         <VueFinalModal
