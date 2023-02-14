@@ -107,9 +107,9 @@ const closeModal = () => {
             <transition>
                 <div v-show="showImage" class="flex flex-col items-center mx-auto w-full">
 
-                        <img v-show="showImage"  class="max-w-full md:max-w-xl lg:max-w-2xl" :src="foto3" alt=""
-                             @load="showImage = true"
-                        >
+                    <img v-show="showImage"  class="max-w-full md:max-w-xl lg:max-w-2xl" :src="foto3" alt=""
+                         @load="showImage = true"
+                    >
                     <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12">
                         " M' aggio pigghiato o' core "
                     </div>
@@ -152,7 +152,8 @@ const closeModal = () => {
                         data-aos="flip-left"
                         data-aos-delay="500"
                         data-aos-easing="ease-out-cubic"
-                        data-aos-duration="3000">
+                        data-aos-duration="3000"
+                    >
                 </div>
             </div>
             <div class="hidden z-50 md:block">
@@ -165,7 +166,8 @@ const closeModal = () => {
                         data-aos-delay="500"
                         data-aos-offset="300"
                         data-aos-easing="ease-out-cubic"
-                        data-aos-duration="3000">
+                        data-aos-duration="3000"
+                    >
                 </div>
             </div>
         </section>
@@ -225,8 +227,8 @@ const closeModal = () => {
 
             <button
                 class="inline-flex items-center px-4 py-2 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
-            text-xl my-16 bg-pink-100 hover:bg-pink-300 border border-pink-400 animate__animated animate__heartBeat
-            animate__infinite"
+                text-xl my-16 bg-pink-100 hover:bg-pink-300 border border-pink-400 animate__animated animate__heartBeat
+                animate__infinite"
                 @click="openFormModal = true"
                 style="color: rgb(89,77,53)"
             >
@@ -237,7 +239,19 @@ const closeModal = () => {
                 <div class="text-sm font-bold">
                     Vuoi contribuire al nostro viaggio di nozze?
                 </div>
-                <div class="z-50 my-2 text-sm font-bold">
+                <a
+                    class="my-1 inline-flex items-center px-2 py-1 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
+                     bg-pink-100 hover:bg-pink-300 border border-pink-400"
+                    href="http://listanozze.gattinonionline.it/installations/siapDesign/GattinoniTravelNetwork/"
+                    style="color: rgb(89,77,53)"
+                    target="_blank"
+                >
+                    Vai alla lista Nozze
+                </a>
+                <div class="z-50 text-sm">
+                    Chiave d'accesso (Invitati): <b>Fedemiky</b>
+                </div>
+                <div class="z-50 my-8 text-sm font-bold">
                     IBAN: IT39X0344214239000054831009
                 </div>
             </div>
@@ -298,11 +312,13 @@ const closeModal = () => {
         </VueFinalModal>
 
 
-        <div class="z-50 mt-4 text-xs font-bold">
+        <div class="flex items-center justify-center z-50 mt-40 w-full text-xs font-bold">
             <div>
                 Realizzazione grafica e tecnica by DVWebSolutions
             </div>
-            <img class="w-36 mx-auto -mt-10" :src="logo" alt="">
+            <div>
+                <img class="w-20 mx-auto " :src="logo" alt="">
+            </div>
         </div>
 
     </div>
