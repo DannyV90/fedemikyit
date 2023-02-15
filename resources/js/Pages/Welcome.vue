@@ -89,15 +89,15 @@ const closeModal = () => {
     <div id="mainDiv" class="flex flex-col justify-center bg-fuchsia-50 min-h-screen py-16 text-center"
          style="color: rgb(89,77,53)">
         <section class="z-50 h-screen lg:mb-60 my-auto">
-            <div class="flex flex-col xl:flex-row items-center justify-center text-5xl sm:text-5xl md:text-5xl xl:text-7xl
-            w-full font-bold xl:mx-auto xl:gap-x-16 mb-8"
+            <div class="flex flex-col md:flex-row xl:flex-row items-center justify-center text-5xl sm:text-5xl md:text-5xl xl:text-7xl
+            w-full font-bold md:gap-x-8 xl:mx-auto xl:gap-x-16 mb-8 md:mb-32"
                  data-aos="zoom-in"
                  data-aos-duration="3000"
                  style="font-family: 'SophiaMartini', cursive">
                 <div>
                     Federica
                 </div>
-                <div class="mt-4 mb-8 md:mt-8 md:mb-16 lg:mt-0 lg:mb-16">
+                <div class="mt-4 mb-8 md:mt-8 md:mb-8 lg:mt-10 lg:mb-16">
                     e
                 </div>
                 <div>
@@ -160,7 +160,7 @@ const closeModal = () => {
             <div class="hidden z-50 md:block">
                 <div class="flex flex-col items-center justify-center mx-auto mb-20">
                     <img
-                        class="max-w-5xl xl:max-w-6xl z-50"
+                        class="max-w-4xl xl:max-w-6xl z-50"
                         :src="fotoFamiglia"
                         alt=""
                         data-aos="flip-left"
@@ -172,17 +172,17 @@ const closeModal = () => {
                 </div>
             </div>
             <img
-                class="md:hidden max-w-md mx-auto -mt-48"
+                class="md:hidden max-w-xs sm:max-w-sm mx-auto -mt-40"
                 :src="fotoDrago"
                 alt=""
                 data-aos="fade-down"
                 data-aos-delay="500"
-                data-aos-offset="300"
+                data-aos-offset="600"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000"
             >
             <img
-                class="hidden md:block md:max-w-xl xl:max-w-3xl mx-auto md:-mt-72"
+                class="hidden md:block md:max-w-xl xl:max-w-3xl mx-auto md:-mt-64"
                 :src="fotoDrago"
                 alt=""
                 data-aos="fade-down"
@@ -198,7 +198,7 @@ const closeModal = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000"
             >
-                <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12 -mt-6 mb-64 xl:mb-32">
+                <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12 -mt-6 mb-20 xl:mb-32">
                     " L'Amore vince su tutto... "
                 </div>
             </div>
@@ -207,9 +207,10 @@ const closeModal = () => {
 
 
         <section
-            class="z-50 w-full"
+            class="z-50 w-full "
             data-aos="flip-right"
             data-aos-easing="ease-out-cubic"
+            data-aos-offset="800"
             data-aos-duration="3000"
         >
             <div class="mb-16 z-50 px-4">
