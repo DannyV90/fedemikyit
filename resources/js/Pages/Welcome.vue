@@ -207,7 +207,7 @@ const closeModal = () => {
 
 
         <section
-            class="z-50 w-full "
+            class="z-50 w-full"
             data-aos="flip-right"
             data-aos-easing="ease-out-cubic"
             data-aos-offset="800"
