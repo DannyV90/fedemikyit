@@ -79,20 +79,18 @@ const closeModal = () => {
 }
 
 </script>
+
 <template>
     <Head>
         <title>Ci Sposiamo</title>
     </Head>
 
 
-    <div
-        id="mainDiv"
-        class=" flex flex-col gap-y-40"
-        style="color: rgb(89,77,53)"
-    >
-        <section>
+    <div id="mainDiv" class="flex flex-col justify-center gap-y-20 bg-fuchsia-50 py-16 text-center"
+         style="color: rgb(89,77,53)">
+        <section class="z-50 mb:40 lg:mb-60 h-fit">
             <div class="flex flex-col md:flex-row xl:flex-row items-center justify-center text-5xl sm:text-5xl
-            md:text-5xl xl:text-7xl w-full font-bold md:gap-x-8 xl:mx-auto xl:gap-x-16 mb-8 md:mb-32 mt-20"
+            md:text-5xl xl:text-7xl w-full font-bold md:gap-x-8 xl:mx-auto xl:gap-x-16 mb-8 md:mb-32"
                  data-aos="zoom-in"
                  data-aos-duration="3000"
                  style="font-family: 'SophiaMartini', cursive">
@@ -106,97 +104,102 @@ const closeModal = () => {
                     Michele
                 </div>
             </div>
+
             <transition>
-                <div v-show="showImage" class="flex flex-col items-center mx-auto w-full mt-20 ">
+                <div v-show="showImage" class="flex flex-col items-center mx-auto w-full mt-20">
+
                     <img v-show="showImage"  class="max-w-full sm:max-w-xl md:max-w-lg lg:max-w-2xl" :src="foto3" alt=""
                          @load="showImage = true"
                     >
                     <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12">
                         " M' aggio pigghiato o' core "
                     </div>
+
                 </div>
             </transition>
         </section>
-        <section>
-            <div class="flex flex-col items-center justify-center text-3xl md:text-5xl xl:text-6xl w-full px-4 gap-y-6
-            md:gap-y-14 xl:gap-y-20 font-bold"
-                 style="font-family: 'SophiaMartini', cursive">
-                <div class="flex flex-col gap-y-6 md:gap-y-14 xl:flex-row">
-                    <div>
-                        Gabriele<span class="punctuation">,</span> Anna<span class="punctuation">,</span>
-                    </div>
-                    <div>
-                        Giorgia e<span class="punctuation">...</span>Mia
-                    </div>
-                </div>
-                <div class="flex flex-col gap-y-6 md:gap-y-14 xl:flex-row gap-x-8 text-center">
-                    <div>
-                        sono felici di annunciarvi
-                    </div>
-                    <div>
-                        che<span class="punctuation">...</span>
-                    </div>
-                </div>
-            </div>
-            <div class="md:hidden">
-                <div class="flex flex-col items-center justify-center mx-auto mb-20">
-                    <img
-                        class="max-w-full z-50"
-                        :src="fotoFamiglia"
-                        alt=""
-                        data-aos="flip-left"
-                        data-aos-delay="500"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="3000"
-                    >
-                </div>
-            </div>
-            <div class="hidden md:block">
-                <div class="flex flex-col items-center justify-center mx-auto mb-20">
-                    <img
-                        class="max-w-3xl xl:max-w-6xl z-50"
-                        :src="fotoFamiglia"
-                        alt=""
-                        data-aos="flip-left"
-                        data-aos-delay="500"
-                        data-aos-offset="300"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="3000"
-                    >
-                </div>
-            </div>
+
+
+        <section class="z-50 mt-40">
             <div>
-                <img
-                    class="md:hidden max-w-xs sm:max-w-sm mx-auto -mt-40"
-                    :src="fotoDrago"
-                    alt=""
-                    data-aos="fade-down"
-                    data-aos-delay="500"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000"
-                >
-                <img
-                    class="hidden md:block md:max-w-xl xl:max-w-3xl mx-auto md:-mt-64"
-                    :src="fotoDrago"
-                    alt=""
-                    data-aos="fade-down"
-                    data-aos-delay="500"
-                    data-aos-offset="500"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000"
-                >
+                <div class="flex flex-col items-center justify-center text-3xl md:text-5xl xl:text-6xl w-full px-4 gap-y-6
+                md:gap-y-14 xl:gap-y-20 font-bold"
+                     style="font-family: 'SophiaMartini', cursive">
+                    <div class="flex flex-col gap-y-6 md:gap-y-14 xl:flex-row">
+                        <div>
+                            Gabriele<span class="punctuation">,</span> Anna<span class="punctuation">,</span>
+                        </div>
+                        <div>
+                            Giorgia e<span class="punctuation">...</span>Mia
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-y-6 md:gap-y-14 xl:flex-row gap-x-8">
+                        <div>
+                            sono felici di annunciarvi
+                        </div>
+                        <div>
+                            che<span class="punctuation">...</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="z-50 md:hidden">
+                <div class="flex flex-col items-center justify-center mx-auto mb-20">
+                    <img
+                        class="max-w-full xl:max-w-6xl z-50"
+                        :src="fotoFamiglia"
+                        alt=""
+                        data-aos="flip-left"
+                        data-aos-delay="500"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="3000"
+                    >
+                </div>
+            </div>
+            <div class="hidden z-50 md:block">
+                <div class="flex flex-col items-center justify-center mx-auto mb-20">
+                    <img
+                        class="max-w-4xl xl:max-w-6xl z-50"
+                        :src="fotoFamiglia"
+                        alt=""
+                        data-aos="flip-left"
+                        data-aos-delay="500"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="3000"
+                    >
+                </div>
+            </div>
+            <img
+                class="md:hidden max-w-xs sm:max-w-sm mx-auto -mt-40"
+                :src="fotoDrago"
+                alt=""
+                data-aos="fade-down"
+                data-aos-delay="500"
+                data-aos-offset="300"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+            >
+            <img
+                class="hidden md:block md:max-w-xl xl:max-w-3xl mx-auto md:-mt-64"
+                :src="fotoDrago"
+                alt=""
+                data-aos="fade-down"
+                data-aos-delay="500"
+                data-aos-offset="500"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+            >
             <div
                 class="md:hidden"
                 data-aos="fade-left"
                 data-aos-delay="500"
-                data-aos-offset="400"
+                data-aos-offset="300"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000"
             >
-                <div class="font-bold text-4xl text-center md:text-6xl punctuation -rotate-12 -mt-6 mb-20 xl:mb-32">
+                <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12 -mt-6 mb-20 xl:mb-32">
                     " L'Amore vince su tutto... "
                 </div>
             </div>
@@ -204,27 +207,28 @@ const closeModal = () => {
                 class="hidden md:block"
                 data-aos="fade-left"
                 data-aos-delay="500"
-                data-aos-offset="400"
+                data-aos-offset="500"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000"
             >
-                <div class="font-bold text-4xl text-center md:text-6xl punctuation -rotate-12 -mt-6  xl:mb-32">
+                <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12 -mt-6 mb-20 xl:mb-32">
                     " L'Amore vince su tutto... "
                 </div>
             </div>
+
         </section>
-        <section>
+
+        <section
+            class="z-50 w-full"
+        >
             <div
-                class="text-center"
+                data-aos="flip-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-delay="500"
+                data-aos-offset="500"
+                data-aos-duration="3000"
             >
-                <div
-                    class="mb-16 z-50 px-4"
-                    data-aos="flip-right"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-delay="500"
-                    data-aos-offset="300"
-                    data-aos-duration="3000"
-                >
+                <div class="mb-16 z-50 px-4">
                     <div class="md:mb-4">
                         <div class="text-4xl md:text-7xl font-bold mb-4">
                             Sabato 1 Luglio 2023
@@ -247,14 +251,7 @@ const closeModal = () => {
                     </div>
                 </div>
 
-                <div
-                    class="mb-16 z-50 font-bold"
-                    data-aos="zoom-in"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-delay="500"
-                    data-aos-offset="300"
-                    data-aos-duration="3000"
-                >
+                <div class="mb-16 z-50 font-bold">
                     <Countdown
                         deadline="2023-07-01 15:00:00"
                         mainColor="#EFDBC9"
@@ -262,14 +259,7 @@ const closeModal = () => {
                         :labels="{days: 'Giorni',hours: 'Ore',minutes: 'Minuti',seconds: 'Secondi'}"
                     />
                 </div>
-                <div
-                    class="font-bold z-50"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-delay="500"
-                    data-aos-offset="300"
-                    data-aos-duration="3000"
-                >
+                <div class="font-bold z-50">
                     <div class="text-2xl md:text-3xl">
                         a seguire il Ricevimento
                     </div>
@@ -290,14 +280,11 @@ const closeModal = () => {
                 animate__infinite"
                     @click="openFormModal = true"
                     style="color: rgb(89,77,53)"
-
                 >
                     CLICCA QUI
                 </button>
 
-                <div
-                    class="mt-20 mb-16"
-                >
+                <div class="mt-20 mb-16">
                     <div class="text-sm font-bold">
                         Vuoi contribuire al nostro viaggio di nozze?
                     </div>
@@ -326,7 +313,11 @@ const closeModal = () => {
                     </div>
                 </div>
             </div>
+
         </section>
+
+
+
         <VueFinalModal
             v-model="openFormModal"
             v-slot="{ close }"
@@ -381,7 +372,7 @@ const closeModal = () => {
         </VueFinalModal>
 
 
-        <div class="flex items-center justify-center mt-40 mb-20 w-full text-xs font-bold">
+        <div class="flex items-center justify-center z-50 mt-40 w-full text-xs font-bold">
             <div>
                 Realizzazione grafica e tecnica by DVWebSolutions
             </div>
@@ -412,7 +403,7 @@ const closeModal = () => {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: -5;
+    z-index: 20;
 }
 
 .punctuation{
@@ -428,9 +419,8 @@ const closeModal = () => {
 .v-leave-to {
     opacity: 0;
 }
-
 .grecaptcha-badge {
-    @apply z-50
+    display: none !important;
 }
 
 
