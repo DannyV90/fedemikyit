@@ -210,7 +210,7 @@ const closeModal = () => {
             class="z-50 w-full "
             data-aos="flip-right"
             data-aos-easing="ease-out-cubic"
-            data-aos-offset="800"
+            data-aos-offset="400"
             data-aos-duration="3000"
         >
             <div class="mb-16 z-50 px-4">
