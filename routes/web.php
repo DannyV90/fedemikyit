@@ -23,7 +23,8 @@ Route::get('/', function () {
         'goldImage' => Storage::url('/images/gold.jpg'),
         'foto3' => Storage::url('/images/foto3.png'),
         'fotoFamiglia' => Storage::url('/images/famiglia.png'),
-        'logo' => Storage::url('/images/DVW_logo_light.png')
+        'logo' => Storage::url('/images/DVW_logo_light.png'),
+        'fotoDrago' => Storage::url('/images/foto_drago.png')
     ]);
 });
 
