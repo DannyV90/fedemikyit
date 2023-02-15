@@ -219,92 +219,97 @@ const closeModal = () => {
         </section>
 
         <section
-            class="z-50 w-full md:hidden"
-            data-aos="flip-right"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="3000"
+            class="z-50 w-full"
         >
-            <div class="mb-16 z-50 px-4">
-                <div class="md:mb-4">
-                    <div class="text-4xl md:text-7xl font-bold mb-4">
-                        Sabato 1 Luglio 2023
-                    </div>
-                    <div class="text-2xl md:text-5xl font-bold">
-                        ore 15:00
-                    </div>
-                </div>
-                <div class="font-bold md:text-2xl z-50 my-4">
-                    presso
-                </div>
-                <div class="text-3xl md:text-5xl font-bold z-50">
-                    Cattedrale S.Alessandro
-                </div>
-                <div class="text-xl md:text-3xl font-bold z-50">
-                    in Piazza Duomo
-                </div>
-                <div class="text-xl md:text-3xl font-bold z-50">
-                    Bergamo (Città Alta)
-                </div>
-            </div>
-
-            <div class="mb-16 z-50 font-bold">
-                <Countdown
-                    deadline="2023-07-01 15:00:00"
-                    mainColor="#EFDBC9"
-                    scondFlipColor="#F1EAE1"
-                    :labels="{days: 'Giorni',hours: 'Ore',minutes: 'Minuti',seconds: 'Secondi'}"
-                />
-            </div>
-            <div class="font-bold z-50">
-                <div class="text-2xl md:text-3xl">
-                    a seguire il Ricevimento
-                </div>
-                <div class="my-2 md:text-2xl md:my-4">
-                    presso
-                </div>
-                <div class="text-3xl md:text-5xl">
-                    Podere Castel Merlo
-                </div>
-                <div>
-                    a Villongo (BG) - Via Verdi, 6
-                </div>
-            </div>
-
-            <button
-                class="inline-flex items-center px-4 py-2 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
-                text-xl my-16 bg-pink-100 hover:bg-pink-300 border border-pink-400 animate__animated animate__heartBeat
-                animate__infinite"
-                @click="openFormModal = true"
-                style="color: rgb(89,77,53)"
+            <div
+                data-aos="flip-right"
+                data-aos-easing="ease-out-cubic"
+                data-aos-delay="500"
+                data-aos-offset="500"
+                data-aos-duration="3000"
             >
-                CLICCA QUI
-            </button>
+                <div class="mb-16 z-50 px-4">
+                    <div class="md:mb-4">
+                        <div class="text-4xl md:text-7xl font-bold mb-4">
+                            Sabato 1 Luglio 2023
+                        </div>
+                        <div class="text-2xl md:text-5xl font-bold">
+                            ore 15:00
+                        </div>
+                    </div>
+                    <div class="font-bold md:text-2xl z-50 my-4">
+                        presso
+                    </div>
+                    <div class="text-3xl md:text-5xl font-bold z-50">
+                        Cattedrale S.Alessandro
+                    </div>
+                    <div class="text-xl md:text-3xl font-bold z-50">
+                        in Piazza Duomo
+                    </div>
+                    <div class="text-xl md:text-3xl font-bold z-50">
+                        Bergamo (Città Alta)
+                    </div>
+                </div>
 
-            <div class="mt-20 mb-16">
-                <div class="text-sm font-bold">
-                    Vuoi contribuire al nostro viaggio di nozze?
+                <div class="mb-16 z-50 font-bold">
+                    <Countdown
+                        deadline="2023-07-01 15:00:00"
+                        mainColor="#EFDBC9"
+                        scondFlipColor="#F1EAE1"
+                        :labels="{days: 'Giorni',hours: 'Ore',minutes: 'Minuti',seconds: 'Secondi'}"
+                    />
                 </div>
-                <a
-                    class="my-1 inline-flex items-center px-2 py-1 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
-                     bg-pink-100 hover:bg-pink-300 border border-pink-400"
-                    href="http://listanozze.gattinonionline.it/installations/siapDesign/GattinoniTravelNetwork/"
-                    style="color: rgb(89,77,53)"
-                    target="_blank"
-                >
-                    Vai alla lista Nozze
-                </a>
-                <div class="z-50 text-sm">
-                    Chiave d'accesso (Invitati): <b>Fedemiky</b>
-                </div>
-                <div class="z-50 my-8 text-sm font-bold">
-                    o
-                </div>
-                <div class="z-50 my-8 text-sm font-bold">
-                    <div >
-                        modalità speedy...jamme jà...
+                <div class="font-bold z-50">
+                    <div class="text-2xl md:text-3xl">
+                        a seguire il Ricevimento
+                    </div>
+                    <div class="my-2 md:text-2xl md:my-4">
+                        presso
+                    </div>
+                    <div class="text-3xl md:text-5xl">
+                        Podere Castel Merlo
                     </div>
                     <div>
-                        IBAN: IT39X0344214239000054831009
+                        a Villongo (BG) - Via Verdi, 6
+                    </div>
+                </div>
+
+                <button
+                    class="inline-flex items-center px-4 py-2 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
+                text-xl my-16 bg-pink-100 hover:bg-pink-300 border border-pink-400 animate__animated animate__heartBeat
+                animate__infinite"
+                    @click="openFormModal = true"
+                    style="color: rgb(89,77,53)"
+                >
+                    CLICCA QUI
+                </button>
+
+                <div class="mt-20 mb-16">
+                    <div class="text-sm font-bold">
+                        Vuoi contribuire al nostro viaggio di nozze?
+                    </div>
+                    <a
+                        class="my-1 inline-flex items-center px-2 py-1 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
+                     bg-pink-100 hover:bg-pink-300 border border-pink-400"
+                        href="http://listanozze.gattinonionline.it/installations/siapDesign/GattinoniTravelNetwork/"
+                        style="color: rgb(89,77,53)"
+                        target="_blank"
+                    >
+                        Vai alla lista Nozze
+                    </a>
+                    <div class="z-50 text-sm">
+                        Chiave d'accesso (Invitati): <b>Fedemiky</b>
+                    </div>
+                    <div class="z-50 my-8 text-sm font-bold">
+                        o
+                    </div>
+                    <div class="z-50 my-8 text-sm font-bold">
+                        <div >
+                            modalità speedy...jamme jà...
+                        </div>
+                        <div>
+                            IBAN: IT39X0344214239000054831009
+                        </div>
                     </div>
                 </div>
             </div>
