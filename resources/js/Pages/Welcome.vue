@@ -89,7 +89,7 @@ const closeModal = () => {
     <div id="mainDiv" class="flex flex-col justify-center bg-fuchsia-50 min-h-screen py-16 text-center"
          style="color: rgb(89,77,53)">
         <section class="z-50 h-screen lg:mb-60 my-auto">
-            <div class="flex flex-col xl:flex-row items-center justify-center text-3xl sm:text-5xl md:text-6xl xl:text-7xl
+            <div class="flex flex-col xl:flex-row items-center justify-center text-5xl sm:text-5xl md:text-5xl xl:text-7xl
             w-full font-bold xl:mx-auto xl:gap-x-16 mb-8"
                  data-aos="zoom-in"
                  data-aos-duration="3000"
@@ -108,7 +108,7 @@ const closeModal = () => {
             <transition>
                 <div v-show="showImage" class="flex flex-col items-center mx-auto w-full">
 
-                    <img v-show="showImage"  class="max-w-full md:max-w-lg lg:max-w-2xl" :src="foto3" alt=""
+                    <img v-show="showImage"  class="max-w-full sm:max-w-xl md:max-w-lg lg:max-w-2xl" :src="foto3" alt=""
                          @load="showImage = true"
                     >
                     <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12">
@@ -120,7 +120,7 @@ const closeModal = () => {
         </section>
 
 
-        <section class="z-50 h-screen mb-48 xl:mb-96">
+        <section class="z-50">
             <div>
                 <div class="flex flex-col items-center justify-center text-3xl md:text-5xl xl:text-6xl w-full px-4 gap-y-6
                 md:gap-y-14 xl:gap-y-20 font-bold"
@@ -160,7 +160,7 @@ const closeModal = () => {
             <div class="hidden z-50 md:block">
                 <div class="flex flex-col items-center justify-center mx-auto mb-20">
                     <img
-                        class="max-w-full xl:max-w-6xl z-50"
+                        class="max-w-5xl xl:max-w-6xl z-50"
                         :src="fotoFamiglia"
                         alt=""
                         data-aos="flip-left"
@@ -172,7 +172,7 @@ const closeModal = () => {
                 </div>
             </div>
             <img
-                class="md:hidden max-w-[15rem] mx-auto -mt-36"
+                class="md:hidden max-w-md mx-auto -mt-48"
                 :src="fotoDrago"
                 alt=""
                 data-aos="fade-down"
@@ -182,7 +182,7 @@ const closeModal = () => {
                 data-aos-duration="2000"
             >
             <img
-                class="hidden md:block md:max-w-xl xl:max-w-3xl mx-auto md:-mt-52 xl:-mt-72 "
+                class="hidden md:block md:max-w-xl xl:max-w-3xl mx-auto md:-mt-72"
                 :src="fotoDrago"
                 alt=""
                 data-aos="fade-down"
@@ -207,12 +207,12 @@ const closeModal = () => {
 
 
         <section
-            class="z-50 w-full md:mt-96 "
+            class="z-50 w-full"
             data-aos="flip-right"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="3000"
         >
-            <div class=" md:mt-40 mb-16 z-50 px-4">
+            <div class="mb-16 z-50 px-4">
                 <div class="md:mb-4">
                     <div class="text-4xl md:text-7xl font-bold mb-4">
                         Sabato 1 Luglio 2023
