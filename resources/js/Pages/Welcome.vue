@@ -198,7 +198,7 @@ const closeModal = () => {
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="2000"
             >
-                <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12 -mt-6 mb-64 xl:mb-32">
+                <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12 -mt-6 mb-20 xl:mb-32">
                     " L'Amore vince su tutto... "
                 </div>
             </div>
