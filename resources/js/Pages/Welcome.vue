@@ -414,7 +414,7 @@ const closeModal = () => {
                 <div>
                     modalità speedy...jamme jà...
                 </div>
-                <div>
+                <div class="text-xs">
                     IBAN: IT39X0344214239000054831009
                 </div>
             </div>
