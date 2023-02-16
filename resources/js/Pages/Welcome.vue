@@ -342,7 +342,7 @@ const closeModal = () => {
         </div>
 
         <div
-            class="mb-16 z-50 font-bold"
+            class="mb-16 z-50 font-bold hidden md:block"
             data-aos="zoom-in"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="500"
@@ -357,7 +357,7 @@ const closeModal = () => {
             />
         </div>
         <div
-            class="font-bold z-50 text-center"
+            class="font-bold z-50 text-center hidden md:block"
             data-aos="zoom-out"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="500"
