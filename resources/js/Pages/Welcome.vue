@@ -249,7 +249,7 @@ const closeModal = () => {
             data-aos="flip-right"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="500"
-            data-aos-offset="600"
+            data-aos-offset="300"
             data-aos-duration="3000"
         >
             <div class="md:mb-4 text-center">
