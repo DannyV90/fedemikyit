@@ -153,7 +153,7 @@ const closeModal = () => {
                     data-aos="flip-right"
                     data-aos-easing="ease-out-cubic"
                     data-aos-delay="500"
-                    data-aos-offset="600"
+                    data-aos-offset="300"
                     data-aos-duration="3000"
                 >
             </div>
@@ -179,7 +179,7 @@ const closeModal = () => {
             data-aos="fade-down"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="600"
-            data-aos-offset="900"
+            data-aos-offset="300"
             data-aos-duration="3000"
         >
         <img
@@ -196,7 +196,7 @@ const closeModal = () => {
             class="md:hidden"
             data-aos="fade-in"
             data-aos-easing="ease-out-cubic"
-            data-aos-delay="600"
+            data-aos-delay="500"
             data-aos-offset="300"
             data-aos-duration="3000"
         >
