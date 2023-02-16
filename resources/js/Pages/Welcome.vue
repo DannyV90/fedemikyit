@@ -201,7 +201,7 @@ const closeModal = () => {
             data-aos-duration="3000"
         >
             <div
-                class="font-bold text-4xl text-center md:text-6xl punctuation -rotate-12 -mt-36 mb-20 xl:mb-52">
+                class="font-bold text-4xl text-center md:text-6xl punctuation -rotate-12 mb-20 xl:mb-52">
                 " L'Amore vince su tutto... "
             </div>
         </div>
