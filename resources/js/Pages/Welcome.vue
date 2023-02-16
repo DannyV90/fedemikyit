@@ -124,7 +124,7 @@ const closeModal = () => {
              data-aos="fade-in"
              data-aos-easing="ease-out-cubic"
              data-aos-delay="300"
-             data-aos-offset="600"
+             data-aos-offset="400"
              data-aos-duration="3000"
         >
             <div class="flex flex-col gap-y-6 md:gap-y-14 xl:flex-row z-50">
@@ -153,7 +153,6 @@ const closeModal = () => {
                     data-aos="flip-right"
                     data-aos-easing="ease-out-cubic"
                     data-aos-delay="500"
-                    data-aos-offset="300"
                     data-aos-duration="3000"
                 >
             </div>
@@ -179,7 +178,6 @@ const closeModal = () => {
             data-aos="fade-down"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="600"
-            data-aos-offset="300"
             data-aos-duration="3000"
         >
         <img
@@ -197,7 +195,6 @@ const closeModal = () => {
             data-aos="fade-in"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="500"
-            data-aos-offset="300"
             data-aos-duration="3000"
         >
             <div
@@ -303,7 +300,7 @@ const closeModal = () => {
                         data-aos="flip-right"
                         data-aos-easing="ease-out-cubic"
                         data-aos-delay="500"
-                        data-aos-offset="400"
+                        data-aos-offset="200"
                         data-aos-duration="3000"
                     >
                         <div class="md:mb-4 text-center">
@@ -333,7 +330,7 @@ const closeModal = () => {
                         data-aos="zoom-in"
                         data-aos-easing="ease-out-cubic"
                         data-aos-delay="500"
-                        data-aos-offset="400"
+                        data-aos-offset="200"
                         data-aos-duration="3000"
                     >
                         <Countdown
@@ -348,7 +345,7 @@ const closeModal = () => {
                         data-aos="zoom-out"
                         data-aos-easing="ease-out-cubic"
                         data-aos-delay="500"
-                        data-aos-offset="400"
+                        data-aos-offset="200"
                         data-aos-duration="3000"
                     >
                         <div class="text-2xl md:text-3xl">
