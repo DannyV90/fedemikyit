@@ -390,7 +390,7 @@ const closeModal = () => {
         </button>
 
         <div
-            class="mt-20 mb-16 text-center"
+            class="mt-20 mb-16 text-center z-50"
         >
             <div class="text-sm font-bold">
                 Vuoi contribuire al nostro viaggio di nozze?
