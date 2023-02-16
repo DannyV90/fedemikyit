@@ -13,8 +13,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Sassy+Frass&display=swap"
               rel="stylesheet"
         >
-        <link rel="preload" href="{{asset('storage/fonts/sophia_martini.otf')}}" as="font">
-        <link rel="preload" as="image" href="{{asset('storage/images/gold.jpg')}}" />
         <style>
             @font-face {
                 font-family: SophiaMartini;
@@ -34,7 +32,7 @@
         @vite(['resources/js/app.js', "resources/js/Pages/{$page['component']}.vue"])
         @inertiaHead
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans ">
         @inertia
     </body>
 </html>
