@@ -91,8 +91,8 @@ const closeModal = () => {
         style="color: rgb(89,77,53)"
     >
         <section class="z-20 mb-32">
-            <div class="flex flex-col md:flex-row xl:flex-row items-center justify-center text-5xl sm:text-5xl
-            md:text-5xl xl:text-7xl w-full font-bold md:gap-x-8 xl:mx-auto xl:gap-x-16 mb-8 md:mb-32 mt-20
+            <div class="flex flex-col md:flex-row xl:flex-row items-center justify-center text-3xl sm:text-5xl
+            md:text-3xl xl:text-5xl w-full font-bold md:gap-x-8 xl:mx-auto xl:gap-x-16 mt-20
             animate__animated animate__fadeIn animate__slower text-center"
                  style="font-family: 'SophiaMartini', cursive"
             >
@@ -107,18 +107,18 @@ const closeModal = () => {
                 </div>
             </div>
             <transition>
-                <div v-show="showImage" class="flex flex-col items-center mx-auto w-full mt-20 z-50">
-                    <img v-show="showImage" class="max-w-full sm:max-w-xl md:max-w-lg lg:max-w-2xl z-50" :src="foto3"
+                <div v-show="showImage" class="flex flex-col items-center mx-auto w-full z-50 mt-20 md:mt-8">
+                    <img v-show="showImage" class="max-w-full sm:max-w-xl md:max-w-lg lg:max-w-xl z-50" :src="foto3"
                          alt=""
                          @load="showImage = true"
                     >
-                    <div class="font-bold text-4xl md:text-6xl punctuation -rotate-12 z-50">
+                    <div class="font-bold text-2xl md:text-5xl punctuation -rotate-12 z-50">
                         " M' aggio pigghiato o' core "
                     </div>
                 </div>
             </transition>
         </section>
-        <div class="flex flex-col items-center justify-center text-3xl md:text-5xl xl:text-6xl w-full px-4 gap-y-6
+        <div class="flex flex-col items-center justify-center text-3xl md:text-4xl w-full px-4 gap-y-6
                 md:gap-y-14 xl:gap-y-20 font-bold z-50"
              style="font-family: 'SophiaMartini', cursive"
              data-aos="fade-in"
@@ -160,7 +160,7 @@ const closeModal = () => {
         <div class="hidden md:block z-50">
             <div>
                 <img
-                    class="md:max-w-3xl xl:max-w-6xl z-50"
+                    class="md:max-w-3xl z-50"
                     :src="fotoFamiglia"
                     alt=""
                     data-aos="flip-right"
@@ -181,7 +181,7 @@ const closeModal = () => {
             data-aos-duration="3000"
         >
         <img
-            class="hidden md:block md:max-w-xl xl:max-w-3xl mx-auto md:-mt-56 z-10"
+            class="hidden md:block md:max-w-xl mx-auto md:-mt-56 z-10"
             :src="fotoDrago"
             alt=""
             data-aos="fade-down"
@@ -198,7 +198,7 @@ const closeModal = () => {
             data-aos-duration="3000"
         >
             <div
-                class="font-bold text-4xl text-center md:text-6xl punctuation -rotate-12 mb-20 xl:mb-52">
+                class="font-bold text-4xl text-center md:text-6xl punctuation -rotate-12 mb-20 -mt-20">
                 " L'Amore vince su tutto... "
             </div>
         </div>
