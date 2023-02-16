@@ -112,18 +112,44 @@ const closeModal = () => {
                          alt=""
                          @load="showImage = true"
                     >
-                    <div class="font-bold text-2xl md:text-5xl punctuation -rotate-12 z-50">
+                    <div class="font-bold text-3xl md:text-5xl punctuation -rotate-12 z-50">
                         " M' aggio pigghiato o' core "
                     </div>
                 </div>
             </transition>
         </section>
-        <div class="flex flex-col items-center justify-center text-3xl md:text-4xl w-full px-4 gap-y-6
+        <div class="md:hidden flex flex-col items-center justify-center text-3xl md:text-4xl w-full px-4 gap-y-6
                 md:gap-y-14 xl:gap-y-20 font-bold z-50"
              style="font-family: 'SophiaMartini', cursive"
              data-aos="fade-in"
              data-aos-easing="ease-out-cubic"
-             data-aos-delay="300"
+             data-aos-delay="500"
+             data-aos-offset="300"
+             data-aos-duration="3000"
+        >
+            <div class="flex flex-col gap-y-6 md:gap-y-14 xl:flex-row z-50">
+                <div>
+                    Gabriele<span class="punctuation">,</span> Anna<span class="punctuation">,</span>
+                </div>
+                <div>
+                    Giorgia e<span class="punctuation">...</span>Mia
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-6 md:gap-y-14 xl:flex-row gap-x-8 text-center z-50">
+                <div>
+                    sono felici di annunciarvi
+                </div>
+                <div>
+                    che<span class="punctuation">...</span>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:block flex flex-col items-center justify-center text-3xl md:text-4xl w-full px-4 gap-y-6
+                md:gap-y-14 xl:gap-y-20 font-bold z-50"
+             style="font-family: 'SophiaMartini', cursive"
+             data-aos="fade-in"
+             data-aos-easing="ease-out-cubic"
+             data-aos-delay="500"
              data-aos-offset="600"
              data-aos-duration="3000"
         >
@@ -153,7 +179,7 @@ const closeModal = () => {
                     data-aos="flip-right"
                     data-aos-easing="ease-out-cubic"
                     data-aos-delay="500"
-                    data-aos-offset="600"
+                    data-aos-offset="300"
                     data-aos-duration="3000"
                 >
             </div>
@@ -179,7 +205,7 @@ const closeModal = () => {
             data-aos="fade-down"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="500"
-            data-aos-offset="600"
+            data-aos-offset="300"
             data-aos-duration="3000"
         >
         <img
@@ -197,7 +223,7 @@ const closeModal = () => {
             data-aos="fade-in"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="500"
-            data-aos-offset="600"
+            data-aos-offset="300"
             data-aos-duration="3000"
         >
             <div
@@ -219,7 +245,117 @@ const closeModal = () => {
         </div>
 
         <div
-            class="mb-16 z-50 px-4"
+            class="mb-16 z-50 px-4 md:hidden"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="500"
+            data-aos-offset="600"
+            data-aos-duration="3000"
+        >
+            <div class="md:mb-4 text-center">
+                <div class="text-4xl md:text-7xl font-bold mb-4">
+                    Sabato 1 Luglio 2023
+                </div>
+                <div class="text-2xl md:text-5xl font-bold">
+                    ore 15:00
+                </div>
+            </div>
+            <div class="font-bold md:text-2xl z-50 my-4 text-center">
+                presso
+            </div>
+            <div class="text-3xl md:text-5xl font-bold z-50 text-center">
+                Cattedrale S.Alessandro
+            </div>
+            <div class="text-xl md:text-3xl font-bold z-50 text-center">
+                in Piazza Duomo
+            </div>
+            <div class="text-xl md:text-3xl font-bold z-50 text-center">
+                Bergamo (Città Alta)
+            </div>
+        </div>
+
+        <div
+            class="mb-16 z-50 font-bold"
+            data-aos="zoom-in"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="500"
+            data-aos-offset="300"
+            data-aos-duration="3000"
+        >
+            <Countdown
+                deadline="2023-07-01 15:00:00"
+                mainColor="#EFDBC9"
+                scondFlipColor="#F1EAE1"
+                :labels="{days: 'Giorni',hours: 'Ore',minutes: 'Minuti',seconds: 'Secondi'}"
+            />
+        </div>
+        <div
+            class="font-bold z-50 text-center"
+            data-aos="zoom-out"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="500"
+            data-aos-offset="300"
+            data-aos-duration="3000"
+        >
+            <div class="text-2xl md:text-3xl">
+                a seguire il Ricevimento
+            </div>
+            <div class="my-2 md:text-2xl md:my-4">
+                presso
+            </div>
+            <div class="text-3xl md:text-5xl">
+                Podere Castel Merlo
+            </div>
+            <div>
+                a Villongo (BG) - Via Verdi, 6
+            </div>
+        </div>
+
+        <button
+            class="inline-flex items-center px-4 py-2 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
+                        text-xl my-16 bg-pink-100 hover:bg-pink-300 border border-pink-400 animate__animated animate__heartBeat
+                        animate__infinite"
+            @click="openFormModal = true"
+            style="color: rgb(89,77,53)"
+
+        >
+            CLICCA QUI
+        </button>
+
+        <div
+            class="mt-20 mb-16 text-center"
+        >
+            <div class="text-sm font-bold">
+                Vuoi contribuire al nostro viaggio di nozze?
+            </div>
+            <a
+                class="my-1 inline-flex items-center px-2 py-1 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
+                                bg-pink-100 hover:bg-pink-300 border border-pink-400"
+                href="http://listanozze.gattinonionline.it/installations/siapDesign/GattinoniTravelNetwork/"
+                style="color: rgb(89,77,53)"
+                target="_blank"
+            >
+                Vai alla lista Nozze
+            </a>
+            <div class="z-50 text-sm">
+                Chiave d'accesso (Invitati): <b>Fedemiky</b>
+            </div>
+            <div class="z-50 my-8 text-sm font-bold">
+                o
+            </div>
+            <div class="z-50 my-8 text-sm font-bold">
+                <div>
+                    modalità speedy...jamme jà...
+                </div>
+                <div>
+                    IBAN: IT39X0344214239000054831009
+                </div>
+            </div>
+        </div>
+
+
+        <div
+            class="hidden md:block mb-16 z-50 px-4"
             data-aos="flip-right"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="500"
