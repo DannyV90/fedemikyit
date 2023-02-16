@@ -144,8 +144,8 @@ const closeModal = () => {
                 </div>
             </div>
         </div>
-        <div class="hidden md:block flex flex-col items-center justify-center text-3xl md:text-4xl w-full px-4 gap-y-6
-                md:gap-y-14 xl:gap-y-20 font-bold z-50"
+        <div class="hidden md:flex flex-col items-center justify-center text-3xl md:text-4xl w-full px-4 gap-y-6
+                md:gap-y-14 xl:gap-y-20 font-bold z-50 text-center"
              style="font-family: 'SophiaMartini', cursive"
              data-aos="fade-in"
              data-aos-easing="ease-out-cubic"
@@ -275,7 +275,7 @@ const closeModal = () => {
         </div>
 
         <div
-            class="mb-16 z-50 font-bold"
+            class="mb-16 z-50 font-bold md:hidden"
             data-aos="zoom-in"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="500"
@@ -290,7 +290,7 @@ const closeModal = () => {
             />
         </div>
         <div
-            class="font-bold z-50 text-center"
+            class="font-bold z-50 text-center md:hidden"
             data-aos="zoom-out"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="500"
@@ -310,49 +310,6 @@ const closeModal = () => {
                 a Villongo (BG) - Via Verdi, 6
             </div>
         </div>
-
-        <button
-            class="inline-flex items-center px-4 py-2 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
-                        text-xl my-16 bg-pink-100 hover:bg-pink-300 border border-pink-400 animate__animated animate__heartBeat
-                        animate__infinite"
-            @click="openFormModal = true"
-            style="color: rgb(89,77,53)"
-
-        >
-            CLICCA QUI
-        </button>
-
-        <div
-            class="mt-20 mb-16 text-center"
-        >
-            <div class="text-sm font-bold">
-                Vuoi contribuire al nostro viaggio di nozze?
-            </div>
-            <a
-                class="my-1 inline-flex items-center px-2 py-1 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
-                                bg-pink-100 hover:bg-pink-300 border border-pink-400"
-                href="http://listanozze.gattinonionline.it/installations/siapDesign/GattinoniTravelNetwork/"
-                style="color: rgb(89,77,53)"
-                target="_blank"
-            >
-                Vai alla lista Nozze
-            </a>
-            <div class="z-50 text-sm">
-                Chiave d'accesso (Invitati): <b>Fedemiky</b>
-            </div>
-            <div class="z-50 my-8 text-sm font-bold">
-                o
-            </div>
-            <div class="z-50 my-8 text-sm font-bold">
-                <div>
-                    modalità speedy...jamme jà...
-                </div>
-                <div>
-                    IBAN: IT39X0344214239000054831009
-                </div>
-            </div>
-        </div>
-
 
         <div
             class="hidden md:block mb-16 z-50 px-4"
