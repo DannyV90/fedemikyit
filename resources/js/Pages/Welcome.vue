@@ -90,7 +90,7 @@ const closeModal = () => {
         class="flex flex-col gap-y-20 w-full"
         style="color: rgb(89,77,53)"
     >
-        <section class="z-20 mb-32">
+        <section class="z-20 my-auto min-h-screen">
             <div class="flex flex-col md:flex-row xl:flex-row items-center justify-center text-3xl sm:text-5xl
             md:text-3xl xl:text-5xl w-full font-bold md:gap-x-8 xl:mx-auto xl:gap-x-16 mt-20
             animate__animated animate__fadeIn animate__slower text-center"
@@ -107,7 +107,7 @@ const closeModal = () => {
                 </div>
             </div>
             <transition>
-                <div v-show="showImage" class="flex flex-col items-center mx-auto w-full z-50 mt-20 md:mt-8">
+                <div v-show="showImage" class="flex flex-col items-center mx-auto w-full z-50 mt-8">
                     <img v-show="showImage" class="max-w-full sm:max-w-xl md:max-w-lg lg:max-w-xl z-50" :src="foto3"
                          alt=""
                          @load="showImage = true"
@@ -150,7 +150,7 @@ const closeModal = () => {
              data-aos="fade-in"
              data-aos-easing="ease-out-cubic"
              data-aos-delay="500"
-             data-aos-offset="600"
+             data-aos-offset="300"
              data-aos-duration="3000"
         >
             <div class="flex flex-col gap-y-6 md:gap-y-14 xl:flex-row z-50">
@@ -193,7 +193,7 @@ const closeModal = () => {
                     data-aos="flip-right"
                     data-aos-easing="ease-out-cubic"
                     data-aos-delay="500"
-                    data-aos-offset="600"
+                    data-aos-offset="300"
                     data-aos-duration="3000"
                 >
             </div>
@@ -204,8 +204,8 @@ const closeModal = () => {
             alt=""
             data-aos="fade-down"
             data-aos-easing="ease-out-cubic"
-            data-aos-delay="300"
-            data-aos-offset="300"
+            data-aos-delay="600"
+            data-aos-offset="500"
             data-aos-duration="3000"
         >
         <img
@@ -215,7 +215,7 @@ const closeModal = () => {
             data-aos="fade-down"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="600"
-            data-aos-offset="600"
+            data-aos-offset="300"
             data-aos-duration="3000"
         >
         <div
@@ -236,7 +236,7 @@ const closeModal = () => {
             data-aos="fade-in"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="600"
-            data-aos-offset="600"
+            data-aos-offset="300"
             data-aos-duration="3000"
         >
             <div class="font-bold text-4xl text-center md:text-6xl punctuation -rotate-12 -mt-16  xl:mb-52">
@@ -316,7 +316,7 @@ const closeModal = () => {
             data-aos="flip-right"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="500"
-            data-aos-offset="600"
+            data-aos-offset="300"
             data-aos-duration="3000"
         >
             <div class="md:mb-4 text-center">
@@ -346,7 +346,7 @@ const closeModal = () => {
             data-aos="zoom-in"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="500"
-            data-aos-offset="600"
+            data-aos-offset="300"
             data-aos-duration="3000"
         >
             <Countdown
@@ -361,7 +361,7 @@ const closeModal = () => {
             data-aos="zoom-out"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="500"
-            data-aos-offset="600"
+            data-aos-offset="300"
             data-aos-duration="3000"
         >
             <div class="text-2xl md:text-3xl">
