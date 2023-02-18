@@ -205,7 +205,7 @@ const closeModal = () => {
             data-aos="fade-down"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="600"
-            data-aos-offset="500"
+            data-aos-offset="300"
             data-aos-duration="3000"
         >
         <img
@@ -223,7 +223,7 @@ const closeModal = () => {
             data-aos="fade-in"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="300"
-            data-aos-offset="300"
+            data-aos-offset="100"
             data-aos-duration="3000"
         >
             <div
@@ -236,7 +236,7 @@ const closeModal = () => {
             data-aos="fade-in"
             data-aos-easing="ease-out-cubic"
             data-aos-delay="600"
-            data-aos-offset="500"
+            data-aos-offset="300"
             data-aos-duration="3000"
         >
             <div class="font-bold text-4xl text-center md:text-6xl punctuation -rotate-12 -mt-16  xl:mb-52">
