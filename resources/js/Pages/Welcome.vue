@@ -272,6 +272,20 @@ const closeModal = () => {
             <div class="text-xl md:text-3xl font-bold z-50 text-center">
                 Bergamo (Città Alta)
             </div>
+            <div class="text-sm font-bold z-50 text-center mt-8 underline">
+                Parcheggio sotterraneo riservato a 350m dalla Chiesa
+            </div>
+            <div class="text-sm font-bold z-50 text-center my-4">
+                presso
+            </div>
+            <div class="text-sm font-bold z-50 text-center animate__animated animate__pulse animate__infinite animate__slow">
+                <a
+                    href="https://www.google.com/maps/place/Garage+San+Pancrazio+Srl/@45.7035673,9.6631342,18.67z/data=!4m22!1m16!4m15!1m6!1m2!1s0x478151381b58271b:0xe6694dfc434dfcb8!2sGarage+San+Pancrazio+Srl,+Via+S.+Pancrazio,+9,+24129+Bergamo+BG!2m2!1d9.664921!2d45.7042131!1m6!1m2!1s0x4781516ab494935d:0x76904a6386936f04!2sCattedrale+di+Sant'Alessandro+Martire,+Piazza+Duomo,+Bergamo,+BG!2m2!1d9.6626573!2d45.7035122!3e2!3m4!1s0x478151381b58271b:0xe6694dfc434dfcb8!8m2!3d45.7042131!4d9.664921"
+                    target="_blank"
+                >
+                    Garage S.Pancrazio - Via S.Pancrazio, 9 <i class="fa-solid fa-map-location-dot fa-lg"></i>
+                </a>
+            </div>
         </div>
 
         <div
@@ -339,6 +353,22 @@ const closeModal = () => {
             <div class="text-xl md:text-3xl font-bold z-50 text-center">
                 Bergamo (Città Alta)
             </div>
+            <div class="text-md font-bold z-50 text-center mt-8 underline">
+                Parcheggio sotterraneo riservato a 350m dalla Chiesa
+            </div>
+            <div class="text-md font-bold z-50 text-center">
+                presso
+            </div>
+            <div class="text-md font-bold z-50 text-center">
+                <a
+                    href="https://www.google.com/maps/place/Garage+San+Pancrazio+Srl/@45.7035673,9.6631342,18.67z/data=!4m22!1m16!4m15!1m6!1m2!1s0x478151381b58271b:0xe6694dfc434dfcb8!2sGarage+San+Pancrazio+Srl,+Via+S.+Pancrazio,+9,+24129+Bergamo+BG!2m2!1d9.664921!2d45.7042131!1m6!1m2!1s0x4781516ab494935d:0x76904a6386936f04!2sCattedrale+di+Sant'Alessandro+Martire,+Piazza+Duomo,+Bergamo,+BG!2m2!1d9.6626573!2d45.7035122!3e2!3m4!1s0x478151381b58271b:0xe6694dfc434dfcb8!8m2!3d45.7042131!4d9.664921"
+                    target="_blank"
+                    class="hover:text-lg cursor-pointer"
+                >
+                    Garage S.Pancrazio, in via S.Pancrazio, 9 <i class="fa-solid fa-map-location-dot fa-lg"></i>
+                </a>
+            </div>
+
         </div>
 
         <div
@@ -381,7 +411,7 @@ const closeModal = () => {
         <button
             class="inline-flex items-center px-4 py-2 rounded-lg w-fit font-bold border-gray-300 mx-auto z-50
                         text-xl my-16 bg-pink-100 hover:bg-pink-300 border border-pink-400 animate__animated animate__heartBeat
-                        animate__infinite"
+                        animate__infinite animate__slow"
             @click="openFormModal = true"
             style="color: rgb(89,77,53)"
 
@@ -412,7 +442,7 @@ const closeModal = () => {
             </div>
             <div class="z-50 my-8 text-sm font-bold">
                 <div>
-                    modalità speedy...jamme jà...
+                    modalità speedy...jamme jà... <span class="">&#128540;</span>
                 </div>
                 <div class="text-xs">
                     IBAN: IT39X0344214239000054831009
