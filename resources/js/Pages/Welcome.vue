@@ -198,26 +198,29 @@ const closeModal = () => {
                 >
             </div>
         </div>
-        <img
-            class="md:hidden max-w-xs sm:max-w-sm mx-auto -mt-40 z-10"
-            :src="fotoDrago"
-            alt=""
-            data-aos="fade-down"
-            data-aos-easing="ease-out-cubic"
-            data-aos-delay="600"
-            data-aos-offset="300"
-            data-aos-duration="3000"
-        >
-        <img
-            class="hidden md:block md:max-w-xl mx-auto md:-mt-56 z-10"
-            :src="fotoDrago"
-            alt=""
-            data-aos="fade-down"
-            data-aos-easing="ease-out-cubic"
-            data-aos-delay="600"
-            data-aos-offset="300"
-            data-aos-duration="3000"
-        >
+        <div class="w-full mx-auto text-center">
+            <img
+                class="md:hidden w-fit mx-auto -mt-40 z-10"
+                :src="fotoDrago"
+                alt=""
+                data-aos="fade-down"
+                data-aos-easing="ease-out-cubic"
+                data-aos-delay="600"
+                data-aos-offset="300"
+                data-aos-duration="3000"
+            >
+            <img
+                class="hidden md:block md:max-w-full xl:max-w-4xl mx-auto md:-mt-56 z-10"
+                :src="fotoDrago"
+                alt=""
+                data-aos="fade-down"
+                data-aos-easing="ease-out-cubic"
+                data-aos-delay="600"
+                data-aos-offset="300"
+                data-aos-duration="3000"
+            >
+        </div>
+
         <div
             class="md:hidden"
             data-aos="fade-in"
@@ -227,7 +230,7 @@ const closeModal = () => {
             data-aos-duration="3000"
         >
             <div
-                class="font-bold text-4xl text-center md:text-6xl punctuation -rotate-12 mb-20 -mt-20">
+                class="font-bold text-4xl text-center md:text-6xl punctuation -rotate-12 mb-20 -mt-32">
                 " L'Amore vince su tutto... "
             </div>
         </div>
@@ -239,7 +242,7 @@ const closeModal = () => {
             data-aos-offset="300"
             data-aos-duration="3000"
         >
-            <div class="font-bold text-4xl text-center md:text-6xl punctuation -rotate-12 -mt-16  xl:mb-52">
+            <div class="font-bold text-4xl text-center md:text-6xl punctuation -rotate-12 -mt-16 md:-mt-40 md:mb-32  xl:mb-52">
                 " L'Amore vince su tutto... "
             </div>
         </div>
