@@ -87,7 +87,7 @@ const closeModal = () => {
 
     <div
         id="mainDiv"
-        class="flex flex-col gap-y-20 w-full"
+        class="flex flex-col gap-y-20 w-full overflow-x-hidden"
         style="color: rgb(89,77,53)"
     >
         <section class="z-20 my-auto min-h-screen">
