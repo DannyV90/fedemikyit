@@ -276,17 +276,18 @@ const closeModal = () => {
                 Bergamo (Città Alta)
             </div>
             <div class="text-sm font-bold z-50 text-center mt-8 underline">
-                Parcheggio sotterraneo riservato a 350m dalla Chiesa
+                Parcheggio riservato a 650m dalla Chiesa
             </div>
             <div class="text-sm font-bold z-50 text-center my-4">
                 presso
             </div>
             <div class="text-sm font-bold z-50 text-center animate__animated animate__pulse animate__infinite animate__slow">
                 <a
-                    href="https://www.google.com/maps/place/Garage+San+Pancrazio+Srl/@45.7035673,9.6631342,18.67z/data=!4m22!1m16!4m15!1m6!1m2!1s0x478151381b58271b:0xe6694dfc434dfcb8!2sGarage+San+Pancrazio+Srl,+Via+S.+Pancrazio,+9,+24129+Bergamo+BG!2m2!1d9.664921!2d45.7042131!1m6!1m2!1s0x4781516ab494935d:0x76904a6386936f04!2sCattedrale+di+Sant'Alessandro+Martire,+Piazza+Duomo,+Bergamo,+BG!2m2!1d9.6626573!2d45.7035122!3e2!3m4!1s0x478151381b58271b:0xe6694dfc434dfcb8!8m2!3d45.7042131!4d9.664921"
+                    href="https://www.google.com/maps/place/Parcheggio+porta+Sant’Alessandro/@45.7051365,9.6594143,17z/data=!4m23!1m16!4m15!1m6!1m2!1s0x4781514188015cfb:0x96844b6c796037a!2sParcheggio+porta+Sant’Alessandro,+Largo+di+Porta+S.+Alessandro,+11,+24129+Bergamo+BG!2m2!1d9.6575091!2d45.7066632!1m6!1m2!1s0x4781516ab494935d:0x76904a6386936f04!2sCattedrale+di+Sant'Alessandro+Martire,+Piazza+Duomo,+Bergamo,+BG!2m2!1d9.6626573!2d45.7035122!3e2!3m5!1s0x4781514188015cfb:0x96844b6c796037a!8m2!3d45.7066632!4d9.6575091!16s%2Fg%2F11cm01qrn4"
                     target="_blank"
                 >
-                    Garage S.Pancrazio - Via S.Pancrazio, 9 <i class="fa-solid fa-map-location-dot fa-lg"></i>
+                    Largo di Porta S. Alessandro, 11
+                    <i class="fa-solid fa-map-location-dot fa-lg"></i>
                 </a>
             </div>
         </div>
@@ -357,18 +358,19 @@ const closeModal = () => {
                 Bergamo (Città Alta)
             </div>
             <div class="text-md font-bold z-50 text-center mt-8 underline">
-                Parcheggio sotterraneo riservato a 350m dalla Chiesa
+                Parcheggio sotterraneo riservato a 650m dalla Chiesa
             </div>
             <div class="text-md font-bold z-50 text-center">
                 presso
             </div>
             <div class="text-md font-bold z-50 text-center animate__animated animate__pulse animate__infinite animate__slow">
                 <a
-                    href="https://www.google.com/maps/place/Garage+San+Pancrazio+Srl/@45.7035673,9.6631342,18.67z/data=!4m22!1m16!4m15!1m6!1m2!1s0x478151381b58271b:0xe6694dfc434dfcb8!2sGarage+San+Pancrazio+Srl,+Via+S.+Pancrazio,+9,+24129+Bergamo+BG!2m2!1d9.664921!2d45.7042131!1m6!1m2!1s0x4781516ab494935d:0x76904a6386936f04!2sCattedrale+di+Sant'Alessandro+Martire,+Piazza+Duomo,+Bergamo,+BG!2m2!1d9.6626573!2d45.7035122!3e2!3m4!1s0x478151381b58271b:0xe6694dfc434dfcb8!8m2!3d45.7042131!4d9.664921"
+                    href="https://www.google.com/maps/place/Parcheggio+porta+Sant’Alessandro/@45.7051365,9.6594143,17z/data=!4m23!1m16!4m15!1m6!1m2!1s0x4781514188015cfb:0x96844b6c796037a!2sParcheggio+porta+Sant’Alessandro,+Largo+di+Porta+S.+Alessandro,+11,+24129+Bergamo+BG!2m2!1d9.6575091!2d45.7066632!1m6!1m2!1s0x4781516ab494935d:0x76904a6386936f04!2sCattedrale+di+Sant'Alessandro+Martire,+Piazza+Duomo,+Bergamo,+BG!2m2!1d9.6626573!2d45.7035122!3e2!3m5!1s0x4781514188015cfb:0x96844b6c796037a!8m2!3d45.7066632!4d9.6575091!16s%2Fg%2F11cm01qrn4"
                     target="_blank"
                     class="hover:text-lg cursor-pointer"
                 >
-                    Garage S.Pancrazio - Via S.Pancrazio, 9 <i class="fa-solid fa-map-location-dot fa-lg"></i>
+                    Parcheggio Porta S.Alessandro - Largo di Porta S. Alessandro, 11
+                    <i class="fa-solid fa-map-location-dot fa-lg"></i>
                 </a>
             </div>
 
