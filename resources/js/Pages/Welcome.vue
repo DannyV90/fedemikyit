@@ -358,7 +358,7 @@ const closeModal = () => {
                 Bergamo (Città Alta)
             </div>
             <div class="text-md font-bold z-50 text-center mt-8 underline">
-                Parcheggio sotterraneo riservato a 650m dalla Chiesa
+                Parcheggio riservato a 650m dalla Chiesa
             </div>
             <div class="text-md font-bold z-50 text-center">
                 presso
